@@ -31,10 +31,8 @@ def commonScanSelection():
             scanType = serviceScan
         elif commonSelection == 6:
             scanType = listScan
-            pathToList = input("Path to list: ")
         elif commonSelection == 7:
             scanType = singlePort
-            portNumber = input("Enter port to scan (e.g. '-80'): ")
         elif commonSelection == 8:
             scanType = allPorts
         elif commonSelection == 9:
@@ -45,23 +43,36 @@ def commonScanSelection():
         # Setting up options for common scans
         # File path is currently mapped to user's desktop
 
-        while commonSelection != 6 or 7:
-            ipAddress = input("Enter Target IP: ")
+        if commonSelection == 6:
+            fileSave = input("Save output? (y/n): ")
+            if fileSave == "y":
+                fileName = input("Name for output file: ")
+                pathToList = input("Enter path to list of targets: ")
+                userName = getpass.getuser()
+                filePath = "C:/users/" + userName + "/desktop/" + fileName
+                os.system('cmd /k' + "nmap " + "-oN " + filePath  + scanType + pathToList)
+            else:
+                os.system('cmd /k' + "nmap " + scanType + pathToList)
+
+        elif commonSelection == 7:
             fileSave = input("Save output? (y/n): ")
             if fileSave == "y":
                 fileName = input("Name for file: ")
+                ipAddress = input("Enter target IP: ")
+                portNumber = input("Enter port to scan (e.g. 80): ")
                 userName = getpass.getuser()
-                filePath = "C:/users/" + userName + "/desktop/" + fileName + ".txt "
-                os.system('cmd  /k' + "nmap " + "-oN " + filePath  + scanType + ipAddress)
-
-        if commonSelection == 6:
-            if fileSave == "y":
-                os.system('cmd /k' + "nmap " + "-oN " + filePath  + scanType + pathToList + ipAddress)
-            else:
-                os.system('cmd /k' + "nmap " + scanType + pathToList + ipAddress)
-
-        elif commonSelection == 7:
-            if fileSave == "y":
+                filePath = "c:/users/" + userName + "/desktop/" + fileName
                 os.system('cmd /k' + "nmap " + "-oN " + filePath  + scanType + portNumber + ipAddress)
             else:
+                ipAddress = input("Enter target IP: ")
+                portNumber = input("Enter port to scan (e.g. 80): ")
                 os.system('cmd /k' + "nmap " + scanType + portNumber + ipAddress)
+
+        while commonSelection != 6 or 7:
+            fileSave = input("Save output? (y/n): ")
+            if fileSave == "y":
+                ipAddress = input("Enter target IP: ")
+                fileName = input("Name for file: ")
+                userName = getpass.getuser()
+                filePath = "C:/users/" + userName + "/desktop/" + fileName
+                os.system('cmd  /k' + "nmap " + "-oN " + filePath  + scanType + ipAddress)
