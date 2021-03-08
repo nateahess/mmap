@@ -7,7 +7,7 @@ from banner import *
 from menu import *
 from commonscans import *
 from favorites import *
-
+from scripts import *
 
 def main():
 
@@ -24,7 +24,7 @@ def main():
             favoriteSelection()
 
         elif selectionOne == 3:
-            print("You have selection option 3")
+            scriptSelection()
 
         elif selectionOne == 4:
             print("Exiting...")

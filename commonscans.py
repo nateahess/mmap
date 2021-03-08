@@ -42,7 +42,6 @@ def commonScanSelection():
             mainMenu()
             menu()
 
-
         # Setting up options for common scans
         # File path is currently mapped to user's desktop
 
@@ -53,7 +52,7 @@ def commonScanSelection():
                 fileName = input("Name for file: ")
                 userName = getpass.getuser()
                 filePath = "C:/users/" + userName + "/desktop/" + fileName + ".txt "
-                os.system('cmd /k' + "nmap " + "-oN " + filePath  + scanType + ipAddress)
+                os.system('cmd  /k' + "nmap " + "-oN " + filePath  + scanType + ipAddress)
 
         if commonSelection == 6:
             if fileSave == "y":
