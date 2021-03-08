@@ -1,11 +1,12 @@
 #!/usr/bin/env python
-#MMAP 1.0
-#Author: @nahberry
-#Description: Python script for running go-to nmap scans
+# MMAP 1.0
+# Author: @nahberry
+# Description: Python script for running go-to nmap scans
 
 from banner import *
 from menu import *
 from commonscans import *
+from favorites import *
 
 
 def main():
@@ -20,7 +21,7 @@ def main():
             commonScanSelection()
 
         elif selectionOne == 2:
-            print("You have selection option 2")
+            favoriteSelection()
 
         elif selectionOne == 3:
             print("You have selection option 3")
@@ -28,7 +29,5 @@ def main():
         elif selectionOne == 4:
             print("Exiting...")
 
-
-bannerOne()
 mainMenu()
 main()

@@ -1,15 +1,16 @@
 #!/usr/bin/env python
 
+# Common scan types
+
 import os
 import getpass
 from mmap import *
 from nmap import *
 from menu import *
 
-
-
 def commonScanSelection():
 
+    #Load common scans menu
     commonScans()
 
     commonSelection = 0
@@ -17,6 +18,7 @@ def commonScanSelection():
 
         commonSelection = int(input("Select a Common Scan: "))
 
+        # Map common scans to scanType variable
         if commonSelection == 1:
             scanType = tcpScan
         elif commonSelection == 2:
@@ -37,8 +39,12 @@ def commonScanSelection():
             scanType = allPorts
         elif commonSelection == 9:
             print("Returning to main menu...")
-            main()
+            mainMenu()
+            menu()
 
+
+        # Setting up options for common scans
+        # File path is currently mapped to user's desktop
 
         while commonSelection != 6 or 7:
             ipAddress = input("Enter Target IP: ")

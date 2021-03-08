@@ -1,8 +1,10 @@
 #!/usr/bin/env python
-#Menu for MMAP
-#Author: @nahberry
+# Menus for MMAP
+
+# Using this file to build menus separately from the main functions.
 
 import sys
+from banner import *
 sys.path.append("/users/nate/appdata/local/programs/python/python39/lib/site-packages")
 import colorama
 from colorama import init
@@ -10,8 +12,12 @@ from colorama import Fore
 
 init()
 
+# ==============MAIN MENU=====================
+
 def mainMenu():
 
+    bannerOne()
+    
     print( Fore.WHITE +
 
     """
@@ -23,39 +29,13 @@ def mainMenu():
 """
     )
 
+# ===============COMMON SCANS====================
+
 def commonScans():
 
-    print( Fore.YELLOW +
+    bannerThree()
 
-    """
-
-               ....
-         .................
-      .......................
-    ..........................
-   .............................
-  ...............................
- .................................
- .................................
-................................
-..............................
-...........................        ....    ....    ....
-.........................          ....    ....    ....
-.......................            ....    ....    ....
-..........................
-..............................
- ................................
- ..................................
-  .................................
-   ...............................
-    .............................
-      .........................
-       ......................
-            ...............
-                ......
-
-"""
-)
+    # Menu for common scan types
 
     print( Fore.WHITE +
 
@@ -75,3 +55,26 @@ def commonScans():
     """
 
     )
+
+# ==================FAVORITES======================
+
+
+def favoriteScans():
+
+    bannerTwo()
+
+# Describe your favorite scans below
+# Add variables for them to nmap.py
+# Map them to scanType in favorites.py
+
+    print( Fore.WHITE +
+
+ """
+
+ 1. Full Port Scan + Version Info
+ 2. Service Scan to Load with Searchsploit
+
+"""
+    )
+
+# ===================================================
