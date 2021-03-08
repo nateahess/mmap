@@ -76,3 +76,6 @@ def commonScanSelection():
                 userName = getpass.getuser()
                 filePath = "C:/users/" + userName + "/desktop/" + fileName
                 os.system('cmd  /k' + "nmap " + "-oN " + filePath  + scanType + ipAddress)
+            elif fileSave == "n":
+                ipAddress = input("Enter target IP: ")
+                os.system('cmd /k' + "nmap " + scanType + ipAddress)
