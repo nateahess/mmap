@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 #banner for MMAP
+
 import sys
 sys.path.append("/users/nate/appdata/local/programs/python/python39/lib/site-packages")
 import colorama
@@ -11,7 +12,7 @@ init()
 
 def bannerOne():
 
-    print(
+    print( Fore.BLUE +
 
 """
 

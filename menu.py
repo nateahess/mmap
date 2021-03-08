@@ -12,7 +12,7 @@ init()
 
 def mainMenu():
 
-    print(
+    print( Fore.WHITE +
 
     """
 1. Common scans
