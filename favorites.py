@@ -27,6 +27,15 @@ def favoriteSelection():
         elif favoriteSelection == 3:
             print('Returning to Main Menu...')
 
+
+        # My second favorite command outputs and XML file for searchploit.
+        # I've separated it here since it does not require a "Y/N answer for fileSave"
+
+        if favoriteSelection == 2:
+            ipAddress = input("Enter Target IP: ")
+            fileName = input("Name for file: ")
+            os.system('cmd /k' + "nmap " + scanType + fileName + ' ' + ipAddress)
+
         # Setting up options for your Commands
         # Filepath is currently mapped to the user's Desktop
         # Pay attention to the order of filePath, scanType, etc. on the os.system line.
@@ -36,16 +45,4 @@ def favoriteSelection():
             fileSave = input("Save output? (y/n): ")
             if fileSave == "y":
                 fileName = input("Name for file: ")
-                userName = getpass.getuser()
-                filePath = "C:/users/" + userName + "/desktop/" + fileName + ".txt "
-                os.system('cmd /k' + "nmap " + "-oN " + filePath + scanType + ipAddress)
-
-        # My second favorite command outputs and XML file for searchploit.
-        # I've separated it here since it does not require a "Y/N answer for fileSave"
-
-        if favoriteSelection == 2:
-            ipAddress = input("Enter Target IP: ")
-            fileName = input("Name for file: ")
-            userName = getpass.getuser()
-            filePath = "C:/users/" + userName + "/desktop/" + fileName + ".txt"
-            os.system('cmd /k' + "nmap " + scanType + filePath + ipAddress)
+                os.system('cmd /k' + "nmap " + "-oN " + fileName + scanType + ipAddress)
