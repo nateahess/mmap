@@ -23,8 +23,8 @@ I've tried my best to comment the code so other's could modify it as well and ma
 
 ## Installation
 
-> I'm not compiling this because it's basically a glorified script.
-> You can use it by cloning the project   
+> I'm not compiling this because it's basically a glorified script.  
+> Feel free to do so if you wish!  
 
 #### Prerequisites
 - _Nmap_ (obviously)
