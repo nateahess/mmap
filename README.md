@@ -3,11 +3,12 @@
 ![MMAP Logo](https://github.com/nahberry/mmap/blob/main/Resources/Images/mmap.PNG)
 
 # MMAP
-> "My Nmap"
+> "My Nmap"  
 > V 1.0  
 > Built this for two reasons:  
 > 1. Because I'm tired of remembering Nmap scans. Automation makes work easier.
-> 2. I wanted to mess with ASCII art.
+> 2. I wanted to mess with ASCII art.  
+
 
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/nahberry/mmap)
@@ -79,9 +80,9 @@ favoriteTwo = "-sV -oX "
 
 * Head on over to the [favorites.py](https://github.com/nahberry/mmap/blob/main/favorites.py) file.
 
-> Here you can add to the if/else statements that assign your favorite scans to the scanType variable. Add more if needed or change the existing one's.
+> Here you can add to the if/else statements that assign your favorite scans to the scanType variable. Add more if needed or change the existing one's.  
 
-### In Use
+## In Use
 ![mmapdemo](https://github.com/nahberry/mmap/blob/main/Resources/Images/mmapDemo.gif)
 
 ## That's all, folks!
