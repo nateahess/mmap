@@ -10,7 +10,7 @@
 > 2. I wanted to mess with ASCII art.
 
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/w/nahberry/mmap)
+![GitHub last commit](https://img.shields.io/github/last-commit/nahberry/mmap)
 
 
 ## Overview
