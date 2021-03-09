@@ -10,7 +10,7 @@
 > 2. I wanted to mess with ASCII art.
 
 
-![Eclipse Marketplace](https://img.shields.io/eclipse-marketplace/last-update/nahberry/mmap)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/nahberry/mmap)
 
 
 ## Overview
