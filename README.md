@@ -6,7 +6,7 @@
 > "My Nmap"  
 > V 1.0  
 > Built this for two reasons:  
-> 1. Because I'm tired of remembering Nmap scans. Automation makes work easier.
+> 1. Because I'm tired of remembering Nmap scans.
 > 2. I wanted to mess with ASCII art.  
 
 
