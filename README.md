@@ -8,8 +8,7 @@
 > Built this for two reasons:  
 > 1. Because I'm tired of remembering Nmap scans. Automation makes work easier.
 > 2. I wanted to mess with ASCII art.  
-
-
+  
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/nahberry/mmap)
 
