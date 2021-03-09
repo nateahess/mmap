@@ -3,8 +3,8 @@
 ![MMAP Logo](https://github.com/nahberry/mmap/blob/main/Resources/Images/mmap.PNG)
 
 # MMAP
-> "My Nmap"  
-> V 1.0  
+> "My Nmap" - Simple Nmap Scripting with Python
+> V 1.0
 > Built this for two reasons:  
 > 1. Because I'm tired of remembering Nmap scans.
 > 2. I wanted to mess with ASCII art.  
@@ -15,24 +15,25 @@
 
 ## Overview
 
-* MMAP is a simple menu tool for Nmap that allows you to quickly select scan types  
+* MMAP is a simple menu tool/script for Nmap that allows you to quickly select scan types  
 without having to remember every Nmap command.  
-* By modifying the favorite commands that have been added you can quickly refer back to Nmap options   you use daily.   
+* By modifying the favorite commands that have been added you can quickly refer back to the Nmap options you use daily.   
 
-I built this with intentions to modify it easily if my "go to" Nmap scans change.    
-I've tried my best to comment the code so other's could modify it as well and make it their own.    
-I may eventually work on adding a way to build a favorites list from inside the program (no promises).   
+I've tried my best to comment the code so other's could modify it as well and make it their own.     
 
 ## Installation
 
-> I'm not compiling this yet because I don't want to re-compile every time I modify scan types.    
-> That being said, it's pretty simple to use.   
+> I'm not compiling this because it's basically a glorified script.
+> You can use it by cloning the project   
 
 #### Prerequisites
-- _Nmap_
+- _Nmap_ (obviously)
 - _Colorama_ (Python Module)
-  *Optional.* I've added comments of what to remove if you're not using this.  
-  This module is simply for coloring the ASCII art.  
+  *Optional.*   This module is simply for coloring the ASCII art.   
+  I've commented out all of the Colorama code,  
+  but feel free to install the module and use it!  
+  I've notated everything in the code comments.  
+
 
 #### Clone the Project
 
@@ -59,8 +60,8 @@ python3 mmap.py
 
 ## Code Modifications
 
-> As stated previously, favorites are built by modifying the code  
-> currently. It is, however, fairly simple.  
+> I've tried keeping it fairly simple to modify and add commands.
+> You'll find more information in the code itself as well.
 
 #### Editing Favorites
 
