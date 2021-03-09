@@ -26,6 +26,7 @@ def favoriteSelection():
             scanType = favoriteTwo
         elif favoriteSelection == 3:
             print('Returning to Main Menu...')
+            os.system("python3 mmap.py")
 
 
         # My second favorite command outputs and XML file for searchploit.

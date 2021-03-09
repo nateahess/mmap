@@ -51,7 +51,7 @@ def commonScans():
     6. Scan from List
     7. Scan Single Port
     8. Scan All Ports
-    9. Back to Main Menu
+    9. Return to Main Menu
 
 
     """
@@ -75,6 +75,7 @@ def favoriteScans():
 
     1. Full Port Scan + Version Info
     2. Service Scan to Load with Searchsploit
+    3. Return to Main Menu
 
     """
 
@@ -99,6 +100,7 @@ def scriptScans():
     7. SMB Brute Scan
     8. SMB OS Discovery
     9. Standard Vulnaerability Scan
+    10. Return to Main Menu
 
     """
 

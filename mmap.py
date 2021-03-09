@@ -28,6 +28,7 @@ def main():
 
         elif selectionOne == 4:
             print("Exiting...")
+            os.system('cmd /k')
 
 mainMenu()
 main()

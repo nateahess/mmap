@@ -35,8 +35,9 @@ def scriptSelection():
             scanType = smbOS
         elif scriptSelection == 9:
             scanType = vulnScan
-        elif ScriptSelection == 10:
+        elif scriptSelection == 10:
             print("Returning to main menu...")
+            os.system("python3 mmap.py")
 
         if scriptSelection == 2:
             fileSave = input("Save output? (y/n): ")
