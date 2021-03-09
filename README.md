@@ -9,9 +9,9 @@
 > 1. Because I'm tired of remembering Nmap scans. Automation makes work easier.
 > 2. I wanted to mess with ASCII art.
 
-[![Updated Badge](https://badges.pufler.dev/updated/puf17640/git-badges)](https://badges.pufler.dev/nahberry/mmap)
 
-<a href=”https://twitter.com/nahberry"><img src=”https://img.shields.io/twitter/follow/nahberry?label=Follow&style=social"></a>
+![Eclipse Marketplace](https://img.shields.io/eclipse-marketplace/last-update/nahberry/mmap)
+
 
 ## Overview
 
