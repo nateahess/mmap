@@ -9,6 +9,10 @@
 > 1. Because I'm tired of remembering Nmap scans. Automation makes work easier.
 > 2. I wanted to mess with ASCII art.
 
+[![Updated Badge](https://badges.pufler.dev/updated/puf17640/git-badges)](https://badges.pufler.dev/nahberry/mmap)
+
+<a href=”https://twitter.com/your_twitter_username_here"><img src=”https://img.shields.io/twitter/follow/nahberry?label=Follow&style=social"></a>
+
 ## Overview
 
 * MMAP is a simple menu tool for Nmap that allows you to quickly select scan types  
@@ -27,7 +31,7 @@ I may eventually work on adding a way to build a favorites list from inside the 
 #### Prerequisites
 - _Nmap_
 - _Colorama_ (Python Module)
-  Optional. I've added comments of what to remove if you're not using this.  
+  *Optional.* I've added comments of what to remove if you're not using this.  
   This module is simply for coloring the ASCII art.  
 
 #### Clone the Project
@@ -77,4 +81,4 @@ favoriteTwo = "-sV -oX "
 
 > Here you can add to the if/else statements that assign your favorite scans to the scanType variable. Add more if needed or change the existing one's.
 
-## That's all, folks! 
+## That's all, folks!
