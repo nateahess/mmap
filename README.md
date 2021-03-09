@@ -2,11 +2,11 @@
 
 ![MMAP Logo](https://github.com/nahberry/mmap/blob/main/Resources/Images/mmap.PNG)
 
-# MMAP
-> "My Nmap" - Simple Nmap Scripting with Python
-> V 1.0
+# MMAP  
+> "My Nmap" - Simple Nmap Scripting with Python  
+> V 1.0  
 > Built this for two reasons:  
-> 1. Because I'm tired of remembering Nmap scans.
+> 1. Because I'm tired of remembering Nmap scans.  
 > 2. I wanted to mess with ASCII art.  
 
 
