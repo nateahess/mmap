@@ -6,11 +6,13 @@
 import sys
 from banner import *
 sys.path.append("/users/nate/appdata/local/programs/python/python39/lib/site-packages")
-import colorama
-from colorama import init
-from colorama import Fore
 
-init()
+#COLORAMA: If using this moduel, uncomment the imports below, the init(), and the Fore calls under the different menus.
+
+# import colorama
+# from colorama import init
+# from colorama import Fore
+# init()
 
 # ==============MAIN MENU=====================
 
@@ -18,7 +20,7 @@ def mainMenu():
 
     bannerOne()
 
-    print( Fore.WHITE +
+    print( # Fore.WHITE +
 
     """
     1. Common scans
@@ -37,7 +39,7 @@ def commonScans():
 
     # Menu for common scan types
 
-    print( Fore.WHITE +
+    print( # Fore.WHITE +
 
     """
 
@@ -67,7 +69,7 @@ def favoriteScans():
 # Add variables for them to nmap.py
 # Map them to scanType in favorites.py
 
-    print( Fore.WHITE +
+    print( # Fore.WHITE +
 
     """
 
@@ -84,7 +86,7 @@ def scriptScans():
 
     bannerFour()
 
-    print ( Fore.WHITE +
+    print ( # Fore.WHITE +
 
     """
 
@@ -93,7 +95,7 @@ def scriptScans():
     3. DNS Brute Scan
     4. Traceroute Geolocation
     5. Host Discovery
-    6. HTTP Enumeration 
+    6. HTTP Enumeration
     7. SMB Brute Scan
     8. SMB OS Discovery
     9. Standard Vulnaerability Scan

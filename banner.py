@@ -5,15 +5,17 @@
 
 import sys
 sys.path.append("/users/nate/appdata/local/programs/python/python39/lib/site-packages")
-import colorama
-from colorama import init
-from colorama import Fore
 
-init()
+# COLORAMA: If using this module, uncomment the imports below, the init(), and the Fore calls in the banners. 
+
+# import colorama
+# from colorama import init
+# from colorama import Fore
+# init()
 
 def bannerOne():
 
-    print( Fore.BLUE +
+    print( # Fore.BLUE +
 
 """
 
@@ -43,7 +45,7 @@ def bannerOne():
 
 def bannerTwo():
 
-    print( Fore.GREEN +
+    print( # Fore.GREEN +
 
         """
 
@@ -83,7 +85,7 @@ def bannerTwo():
 
 def bannerThree():
 
-    print( Fore.YELLOW +
+    print( # Fore.YELLOW +
 
     """
 
@@ -117,7 +119,8 @@ def bannerThree():
 
 def bannerFour():
 
-    print ( Fore.MAGENTA + """
+    print ( # Fore.MAGENTA +
+    """
 
                                                     x
                                                 x
