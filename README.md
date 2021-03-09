@@ -11,7 +11,7 @@
 
 [![Updated Badge](https://badges.pufler.dev/updated/puf17640/git-badges)](https://badges.pufler.dev/nahberry/mmap)
 
-<a href=”https://twitter.com/your_twitter_username_here"><img src=”https://img.shields.io/twitter/follow/nahberry?label=Follow&style=social"></a>
+<a href=”https://twitter.com/nahberry"><img src=”https://img.shields.io/twitter/follow/your_twitter_username_here?label=Follow&style=social"></a>
 
 ## Overview
 
