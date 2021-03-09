@@ -81,4 +81,7 @@ favoriteTwo = "-sV -oX "
 
 > Here you can add to the if/else statements that assign your favorite scans to the scanType variable. Add more if needed or change the existing one's.
 
+### In Use
+![mmapdemo](https://github.com/nahberry/mmap/blob/main/Resources/Images/mmapDemo.gif)
+
 ## That's all, folks!
