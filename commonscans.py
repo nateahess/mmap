@@ -3,7 +3,6 @@
 # Common scan types
 
 import os
-import getpass
 from mmap import *
 from nmap import *
 from menu import *
@@ -37,40 +36,36 @@ def commonScanSelection():
             scanType = allPorts
         elif commonSelection == 9:
             print("Returning to main menu...")
-            mainMenu()
-            menu()
+            os.system("python3 mmap.py")
+
 
         # Setting up options for common scans
         # File path is currently mapped to user's desktop
 
         if commonSelection == 6:
+            pathToList = input("Enter path to list of targets: ")
             fileSave = input("Save output? (y/n): ")
             if fileSave == "y":
                 fileName = input("Name for output file: ")
-                pathToList = input("Enter path to list of targets: ")
-
-                os.system('cmd /k' + "nmap " + "-oN " + fileNath  + scanType + pathToList)
+                os.system('cmd /k' + "nmap " + "-oN " + fileName + ' ' + scanType + ' ' + pathToList)
             else:
-                os.system('cmd /k' + "nmap " + scanType + pathToList)
+                os.system('cmd /k' + "nmap " + scanType + ' ' + pathToList)
 
         elif commonSelection == 7:
+            ipAddress = input("Enter target IP: ")
+            portNumber = input("Enter port to scan (e.g. 80): ")
             fileSave = input("Save output? (y/n): ")
             if fileSave == "y":
                 fileName = input("Name for file: ")
-                ipAddress = input("Enter target IP: ")
-                portNumber = input("Enter port to scan (e.g. 80): ")
-                os.system('cmd /k' + "nmap " + "-oN " + fileName  + scanType + portNumber + ' ' + ipAddress)
+                os.system('cmd /k' + "nmap " + "-oN " + fileName + ' ' + scanType + ' '+ portNumber + ' ' + ipAddress)
             else:
-                ipAddress = input("Enter target IP: ")
-                portNumber = input("Enter port to scan (e.g. 80): ")
-                os.system('cmd /k' + "nmap " + scanType + portNumber + ' ' + ipAddress)
+                os.system('cmd /k' + "nmap " + scanType + ' ' + portNumber + ' ' + ipAddress)
 
         while commonSelection != 6 or 7:
+            ipAddress = input("Enter target IP: ")
             fileSave = input("Save output? (y/n): ")
             if fileSave == "y":
-                ipAddress = input("Enter target IP: ")
                 fileName = input("Name for file: ")
-                os.system('cmd  /k' + "nmap " + "-oN " + fileName  + scanType + ipAddress)
+                os.system('cmd  /k' + "nmap " + "-oN " + fileName + ' ' + scanType + ' ' + ipAddress)
             elif fileSave == "n":
-                ipAddress = input("Enter target IP: ")
-                os.system('cmd /k' + "nmap " + scanType + ipAddress)
+                os.system('cmd /k' + "nmap " + scanType + ' ' + ipAddress)

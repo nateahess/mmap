@@ -38,13 +38,19 @@ def scriptSelection():
         elif ScriptSelection == 10:
             print("Returning to main menu...")
 
-        while scriptSelection != 10:
+        if scriptSelection == 2:
+            fileSave = input("Save output? (y/n): ")
+            if fileSave == "y":
+                fileName = input("Name for file: ")
+                os.system('cmd /k' + "nmap " + "-oN " + fileName + ' ' + scanType)
+            elif fileSave == "n":
+                os.system('cmd /k' + "nmap " + fileName + ' ' + scanType)
+
+        while scriptSelection != 2 or 10:
             ipAddress = input("Enter Target IP: ")
             fileSave = input("Save output? (y/n): ")
             if fileSave == "y":
                 fileName = input("Name for file: ")
-                userName = getpass.getuser()
-                filePath = "C:/users/" + userName + "/desktop/" + fileName + ".txt "
-                os.system('cmd /k' + "nmap " + "-oN " + filePath + scanType + ipAddress)
+                os.system('cmd /k' + "nmap " + "-oN " + fileName + ' ' + scanType + ' ' + ipAddress)
             elif fileSave == "n":
-                os.system('cmd /k' + "nmap " + scanType + ipAddress)
+                os.system('cmd /k' + "nmap " + scanType + ' ' + ipAddress)

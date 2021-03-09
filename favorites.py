@@ -34,7 +34,7 @@ def favoriteSelection():
         if favoriteSelection == 2:
             ipAddress = input("Enter Target IP: ")
             fileName = input("Name for file: ")
-            os.system('cmd /k' + "nmap " + scanType + fileName + ' ' + ipAddress)
+            os.system('cmd /k' + "nmap " + scanType + ' ' + fileName + ' ' + ipAddress)
 
         # Setting up options for your Commands
         # Filepath is currently mapped to the user's Desktop
@@ -45,4 +45,6 @@ def favoriteSelection():
             fileSave = input("Save output? (y/n): ")
             if fileSave == "y":
                 fileName = input("Name for file: ")
-                os.system('cmd /k' + "nmap " + "-oN " + fileName + scanType + ipAddress)
+                os.system('cmd /k' + "nmap " + "-oN " + fileName + ' ' + scanType + ' ' + ipAddress)
+            elif fileSave == "n":
+                os.system('cmd /k' + "nmap " + scanType + ' ' + ipAddress)

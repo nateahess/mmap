@@ -1,0 +1,3 @@
+# Nmap 7.91 scan initiated Mon Mar 08 21:42:29 2021 as: nmap -oN hostDiscovery -p 80 --script hostmap-bfk.nse
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Mon Mar 08 21:42:29 2021 -- 0 IP addresses (0 hosts up) scanned in 0.44 seconds
