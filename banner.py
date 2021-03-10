@@ -6,7 +6,7 @@
 import sys
 sys.path.append("/users/nate/appdata/local/programs/python/python39/lib/site-packages")
 
-# COLORAMA: If using this module, uncomment the imports below, the init(), and the Fore calls in the banners. 
+# COLORAMA: If using this module, uncomment the imports below, the init(), and the Fore calls in the banners.
 
 # import colorama
 # from colorama import init
@@ -150,4 +150,35 @@ def bannerFour():
 
 
     """
+    )
+
+def bannerFive():
+
+    print( #Fore.RED +
+    """
+
+   ccccccccccccccccccccccccccccc
+ ccccccccccccccccccccccccccccccccc
+ccccccccccccccccccccccccccccccccccc
+cccccc                       cccccc
+cccccc                       cccccc
+cccccc                       cccccc
+cccccc                       cccccc
+cccccc                       cccccc
+cccccc                       cccccc
+cccccc                       cccccc
+cccccc                       cccccc
+cccccc                        cccc
+cccccc
+cccccc
+cccccccccccccccccccccccccccccccccc
+ ccccccccccccccccccccccccccccccccccc
+   cccccccccccccccccccccccccccccccccc
+                                cccccc
+   RIP                            cccc
+
+
+
+   """
+
     )

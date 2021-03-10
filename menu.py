@@ -35,7 +35,7 @@ def mainMenu():
 
 def commonScans():
 
-    bannerThree()
+    bannerTwo()
 
     # Menu for common scan types
 
@@ -63,7 +63,7 @@ def commonScans():
 
 def favoriteScans():
 
-    bannerTwo()
+    bannerThree()
 
 # Describe your favorite scans below
 # Add variables for them to nmap.py
