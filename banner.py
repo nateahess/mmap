@@ -59,9 +59,9 @@ def bannerTwo():
              |   __________________   |   |
              |  |                 |   |   |
              |  | mmap.py         |   |   |
-             |  |                 |   |   |      FAVORITE
-             |  | 80/tcp open     |   |   |      SCANS
-             |  | 443/tcp open    |   |   |      LOADING....
+             |  |                 |   |   |
+             |  | 80/tcp open     |   |   |
+             |  | 443/tcp open    |   |   |      
              |  |                 |   |   |
              |  |                 |   |   |
              |  |_________________|   | ||
